@@ -6,9 +6,13 @@ describe('App' , () => {
 
   beforeEach(() => {
     component = renderComponent(App);
-  });
+  })
 
   it('renders something', () => {
     expect(component).to.exist;
+  });
+
+  it('render comment box', () => {
+    expect(component.find('.comment-box')).to.exist;
   });
 });
